@@ -134,7 +134,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.125rem 0;
+  padding-top: 3.125rem;
 }
 
 .main-title{
