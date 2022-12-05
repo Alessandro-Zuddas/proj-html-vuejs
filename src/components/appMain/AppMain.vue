@@ -1,18 +1,34 @@
 <script>
+
+import MainTop from './MainTop.vue';
+import MainMiddle from './MainMiddle.vue';
+import MainBottom from './MainBottom.vue';
+
 export default {
 
     name: "AppMain",
 
+    components: {
+
+      MainTop,
+      MainMiddle,
+      MainBottom,
+
+    },
     data() {
-        return {
-        title: 'App Main'
-        }
+      return {
+      
+      }
     }
 }
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+
+  <MainTop/>
+  <MainMiddle/>
+  <MainBottom/>
+
 </template>
 
 <style scoped></style>
