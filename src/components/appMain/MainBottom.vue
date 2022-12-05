@@ -48,15 +48,45 @@ export default {
     <!-- Latest news Images -->
     <div class="container-sm sm-two">
       <div class="row-two">
-        <div class="column">
+        <!-- Latest news One -->
+        <div class="column img-col">
           <img src="https://via.placeholder.com/200x150" alt="">
+          <div class="news-col">
+            <h3>Latest new title</h3>
+            <small class="news-date">December 10 2021</small>
+            <hr class="news-hr">
+            <p class="latest-news-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestias in quidem culpa molestiae delectus et soluta dolor. Totam et hic quia harum quidem temporibus, obcaecati natus error! Voluptates, ipsum.
+            </p>
+          </div>
         </div>
-        <div class="column">
+        <!-- /Latest news One -->
+        <!-- Latest news two -->
+        <div class="column img-col">
           <img src="https://via.placeholder.com/200x150" alt="">
+          <div class="news-col">
+            <h3>Latest new title</h3>
+            <small class="news-date">December 10 2021</small>
+            <hr class="news-hr">
+            <p class="latest-news-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestias in quidem culpa molestiae delectus et soluta dolor. Totam et hic quia harum quidem temporibus, obcaecati natus error! Voluptates, ipsum.
+            </p>
+          </div>
         </div>
-        <div class="column">
+        <!-- /Latest news two -->
+        <!-- Latest news three -->
+        <div class="column img-col">
           <img src="https://via.placeholder.com/200x150" alt="">
+          <div class="news-col">
+            <h3>Latest new title</h3>
+            <small class="news-date">December 10 2021</small>
+            <hr class="news-hr">
+            <p class="latest-news-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestias in quidem culpa molestiae delectus et soluta dolor. Totam et hic quia harum quidem temporibus, obcaecati natus error! Voluptates, ipsum.
+            </p>
+          </div>
         </div>
+        <!-- /Latest news three -->
       </div>
     </div>
     <!-- /Latest news Images -->
@@ -184,6 +214,31 @@ hr{
   align-items: center;
   margin-top: 1.25rem;
   margin-bottom: 2.5rem;
+}
+
+.img-col{
+  border: .0625rem solid lightgray;
+}
+
+.news-col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 12.5rem;
+  padding: .3125rem .3125rem;
+}
+
+.news-date{
+  margin: .3125rem 0;
+}
+
+.news-hr{
+  width: 100%;
+  background-color: lightgray;
+}
+
+.news-text{
+  font-size: .9375rem;
 }
 
 .latest-news-hr{
