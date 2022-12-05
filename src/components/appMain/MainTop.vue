@@ -20,7 +20,7 @@ export default {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum saepe ab quis accusantium repellendus aspernatur repudiandae, <br> maxime perspiciatis deserunt impedit ipsam magni quae placeat dolor.
         </p>
 
-        <div class="row">
+        <div class="row row-bt-circle">
             <div class="column">
                 <p class="card-icon">Icon</p>
                 <h3 class="card-title">Titolo</h3>
@@ -50,29 +50,30 @@ export default {
                 </p>
             </div>
         </div>
+    </div>
 
-        <div class="row bg-variant">   
-            <div class="container-sm">
-                <div class="company-infos">
-                    <div>Icon</div>
-                    <h2>0000</h2>
-                    <p>Info Text</p>
-                </div>
-                <div class="company-infos">
-                    <div>Icon</div>
-                    <h2>0000</h2>
-                    <p>Info Text</p>
-                </div>
-                <div class="company-infos">
-                    <div>Icon</div>
-                    <h2>0000</h2>
-                    <p>Info Text</p>
-                </div>
-                <div class="company-infos">
-                    <div>Icon</div>
-                    <h2>0000</h2>
-                    <p>Info Text</p>
-                </div>
+    
+    <div class="row bg-variant">   
+        <div class="container-sm">
+            <div class="company-infos">
+                <div>Icon</div>
+                <h2>0000</h2>
+                <p>Info Text</p>
+            </div>
+            <div class="company-infos">
+                <div>Icon</div>
+                <h2>0000</h2>
+                <p>Info Text</p>
+            </div>
+            <div class="company-infos">
+                <div>Icon</div>
+                <h2>0000</h2>
+                <p>Info Text</p>
+            </div>
+            <div class="company-infos">
+                <div>Icon</div>
+                <h2>0000</h2>
+                <p>Info Text</p>
             </div>
         </div>
     </div>
@@ -126,9 +127,33 @@ hr{
 }
 
 .bg-variant{
-    margin: 1.5625rem 0;
+    padding: 1.5625rem 0;
+    position: relative;
+    overflow: hidden;
     /* DEBUG */
     background-color: aqua;
+}
+
+.bg-variant:before{
+    content: "";
+    position: absolute;
+    top: -30%;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%; 
+}
+
+.bg-variant:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -30%;
+    height: 50%;
+    background-color: white;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
 .container-sm{
@@ -141,6 +166,7 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3.125rem 0;
 }
 
 </style>
