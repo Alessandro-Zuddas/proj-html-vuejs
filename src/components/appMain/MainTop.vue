@@ -20,7 +20,9 @@ export default {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum saepe ab quis accusantium repellendus aspernatur repudiandae, <br> maxime perspiciatis deserunt impedit ipsam magni quae placeat dolor.
         </p>
 
+        <!-- Company benefits -->
         <div class="row row-bt-circle">
+            <!-- Company benefit One -->
             <div class="column">
                 <p class="card-icon">Icon</p>
                 <h3 class="card-title">Titolo</h3>
@@ -28,6 +30,8 @@ export default {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident?
                 </p>
             </div>
+            <!-- /Company benefit One -->
+            <!-- Company benefit two -->
             <div class="column">
                 <p class="card-icon">Icon</p>
                 <h3 class="card-title">Titolo</h3>
@@ -35,6 +39,8 @@ export default {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident?
                 </p>
             </div>
+            <!-- /Company benefit two -->
+            <!-- Company benefit three -->
             <div class="column">
                 <p class="card-icon">Icon</p>
                 <h3 class="card-title">Titolo</h3>
@@ -42,6 +48,8 @@ export default {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident?
                 </p>
             </div>
+            <!-- /Company benefit three -->
+            <!-- Company benefit four -->
             <div class="column">
                 <p class="card-icon">Icon</p>
                 <h3 class="card-title">Titolo</h3>
@@ -49,38 +57,51 @@ export default {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident?
                 </p>
             </div>
+            <!-- /Company benefit four -->
         </div>
     </div>
-
+    <!-- /Company benefits -->
     
+    <!-- Company Infos -->
     <div class="row bg-variant">   
         <div class="container-sm">
+            <!-- Company Info One -->
             <div class="company-infos">
                 <div>Icon</div>
                 <h2>0000</h2>
                 <p>Info Text</p>
             </div>
+            <!-- /Company Info One -->
+            <!-- Company Info Two -->
             <div class="company-infos">
                 <div>Icon</div>
                 <h2>0000</h2>
                 <p>Info Text</p>
             </div>
+            <!-- /Company Info Two -->
+            <!-- Company Info Three -->
             <div class="company-infos">
                 <div>Icon</div>
                 <h2>0000</h2>
                 <p>Info Text</p>
             </div>
+            <!-- /Company Info Three -->
+            <!-- Company Info Four -->
             <div class="company-infos">
                 <div>Icon</div>
                 <h2>0000</h2>
                 <p>Info Text</p>
             </div>
+            <!-- /Company Info Four -->
         </div>
     </div>
+    <!-- /Company Infos -->
 
 </template>
 
 <style scoped>
+
+/* Company benefits */
 
 .container{
     display: flex;
@@ -126,6 +147,10 @@ hr{
     margin-bottom: .625rem;
 }
 
+/* /Company benefits */
+
+/* Company infos */
+
 .bg-variant{
     padding: 1.5625rem 0;
     position: relative;
@@ -168,5 +193,7 @@ hr{
     align-items: center;
     padding: 3.125rem 0;
 }
+
+/* /Company infos */
 
 </style>
