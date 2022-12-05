@@ -1,16 +1,28 @@
 <script>
-import PageTitle from './components/PageTitle.vue';
+import AppHeader from './components/appHeader/AppHeader.vue';
+import HeroTop from './components/appHeroes/HeroTop.vue';
+import AppMain from './components/appMain/AppMain.vue';
+import HeroBottom from './components/appHeroes/HeroBottom.vue';
+import AppFooter from "./components/appFooter/AppFooter.vue"
 
 export default {
   components: {
-    PageTitle,
+    AppHeader,
+    HeroTop,
+    AppMain,
+    HeroBottom,
+    AppFooter
   }
 }
 </script>
 
 <template>
   <div>
-    <PageTitle/>
+    <AppHeader/>
+    <HeroTop/>
+    <AppMain/>
+    <HeroBottom/>
+    <AppFooter/>
   </div>
 </template>
 
