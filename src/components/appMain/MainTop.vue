@@ -50,6 +50,31 @@ export default {
                 </p>
             </div>
         </div>
+
+        <div class="row bg-variant">   
+            <div class="container-sm">
+                <div class="company-infos">
+                    <div>Icon</div>
+                    <h2>0000</h2>
+                    <p>Info Text</p>
+                </div>
+                <div class="company-infos">
+                    <div>Icon</div>
+                    <h2>0000</h2>
+                    <p>Info Text</p>
+                </div>
+                <div class="company-infos">
+                    <div>Icon</div>
+                    <h2>0000</h2>
+                    <p>Info Text</p>
+                </div>
+                <div class="company-infos">
+                    <div>Icon</div>
+                    <h2>0000</h2>
+                    <p>Info Text</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </template>
@@ -98,6 +123,24 @@ hr{
 
 .card-icon,.card-title{
     margin-bottom: .625rem;
+}
+
+.bg-variant{
+    margin: 1.5625rem 0;
+    /* DEBUG */
+    background-color: aqua;
+}
+
+.container-sm{
+    display: flex;
+    padding: 6.25rem 0;
+}
+
+.company-infos{
+    width: calc(100% / 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 </style>
