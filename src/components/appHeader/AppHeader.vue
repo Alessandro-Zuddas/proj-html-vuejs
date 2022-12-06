@@ -5,8 +5,11 @@ export default {
 
     data() {
         return {
-
+            currentIndex: 0,
         }
+    }, 
+    methods:{
+
     }
 }
 </script>
@@ -14,16 +17,14 @@ export default {
 <template>
   
     <div class="container">
-        <div>
-            Logo
-        </div>
+        <img class="logo" src="../../assets/img/construction_logo.png" alt="Header Logo">
         <nav>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <button class="nav-btn">Button</button>
+            <a class="nav-link active" href="#">HOME</a>
+            <a class="nav-link" href="#">ABOUT</a>
+            <a class="nav-link" href="#">SERVICES</a>
+            <a class="nav-link" href="#">WORK</a>
+            <a class="nav-link" href="#">ARTICLES</a>
+            <button class="nav-btn">GET QUOTE</button>
         </nav>
     </div>
 
@@ -34,9 +35,13 @@ export default {
 .container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: .9375rem 3.125rem;
-    /* DEBUG */
-    background-color: aquamarine;
+}
+
+.logo{
+    max-width: 9.375rem;
+    max-height: 9.375rem;
 }
 
 .nav-link{
@@ -45,8 +50,40 @@ export default {
     padding-right: .9375rem;
 }
 
+.active{
+    position: relative;
+    color: var(--first-color);
+    border-bottom: 5px solid white;
+}
+
+.active:before{
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 18px;
+    bottom: -44px;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: 10px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.nav-link:hover{
+    color: var(--first-color);
+}
+
 .nav-btn{
-    padding: .3125rem .625rem;
+    color: gray;
+    background-color: var(--first-color);
+    border: none;
+    padding: .4375rem .9375rem;
+    cursor: pointer;
+}
+
+a{
+    font-size: .8125rem;
 }
 
 </style>
