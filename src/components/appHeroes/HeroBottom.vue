@@ -5,7 +5,7 @@ export default {
 
     data() {
         return {
-        title: 'Hero Bottom'
+        
         }
     }
 }
