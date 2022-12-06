@@ -38,7 +38,7 @@ export default {
   <!-- Latest news  -->
   <div class="container cont-two">
     <!-- Latest news header -->
-    <h2 class="main-title">Titolo main middle one</h2>
+    <h2 class="main-title">Titolo latest news</h2>
     <hr class="latest-news-hr">
     <p class="desc-text">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum saepe ab quis accusantium repellendus aspernatur repudiandae, <br> maxime perspiciatis deserunt impedit ipsam magni quae placeat dolor.
@@ -169,7 +169,8 @@ hr{
   height: 50%;
   background-color: lightgray;
   border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%; 
+  border-bottom-right-radius: 50%;
+  background-color: #f5f5f5; 
 }
 
 .bg-variant:after{
@@ -181,6 +182,7 @@ hr{
   background-color: white;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  background-color: #f5f5f5;
 }
 
 .container-sm{
@@ -196,7 +198,7 @@ hr{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: #f5f5f5;
 }
 
 .sm-two{

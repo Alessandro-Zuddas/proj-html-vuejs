@@ -15,7 +15,7 @@ export default {
   
   <div class="container">
     <!-- Main Middle One Header -->
-    <h2 class="main-title">Titolo main middle one</h2>
+    <h2 class="main-title">Titolo main works</h2>
     <hr>
     <p class="desc-text">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum saepe ab quis accusantium repellendus aspernatur repudiandae, <br> maxime perspiciatis deserunt impedit ipsam magni quae placeat dolor.
@@ -192,7 +192,7 @@ hr{
 }
 
 .bg-variant{
-  background-color: lightgray;
+  background-color: #f5f5f5;
 }
 
 .column-sm{
