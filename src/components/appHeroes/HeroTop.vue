@@ -13,16 +13,18 @@ export default {
 
 <template>
   
-  <div class="container">
-    <h1>Titolo Hero Top</h1>
-    <h4 class="hero-top-desc">Descrizione Hero Top</h4>
-    <button class="hero-top-btn btn-one">Button One</button>
-    <button class="hero-top-btn">Button two</button>
+  <div class="container cont-one">
+    <div class="img-container">
+      <h1 class="hero-top-title">BUILDING INSPIRING SPACES</h1>
+      <h4 class="hero-top-desc">We Build Inspiring Residential & Commercial Spaces</h4>
+      <button class="hero-top-btn btn-one">EXPLORE RECENT WORK</button>
+      <button class="hero-top-btn btn-two">GET A QUOTE TODAY</button>
+    </div>
   </div>
 
   <div class="container bg-variant">
-    <h2>Hero Final Text</h2>
-    <button class="hero-top-btn btn-three">Button three</button>
+    <h2 class="hero-top-title-two">Do You Have A Construction Project We Can Help With?</h2>
+    <button class="hero-top-btn btn-three">GET A FREE QUOTE</button>
   </div>
 
 </template>
@@ -31,32 +33,59 @@ export default {
 
 .container{
   text-align: center;
-  padding: 3.125rem 0;
-  /* DEBUG */
-  background-color: bisque;
+  background-image: url("../../assets/img/home-slider-62528242.jpg");
+}
+
+.cont-one{
+  padding: 15.625rem 0;
+}
+
+.hero-top-title{
+  font-size: 3.125rem;
+  color: white;
 }
 
 .bg-variant{
   position: relative;
-  background-color: yellow;
+  background-color: var(--first-color);
+  padding: 3.125rem 0;
+  background-image: none;
+}
+
+.hero-top-title-two{
+  font-size: 1.25rem;
 }
 
 .hero-top-desc{
+  color: var(--first-color);
+  font-size: 1.25rem;
   margin: .9375rem 0;
 }
 
 .hero-top-btn{
-  padding: .3125rem .9375rem;
+  border: none;
+  padding: .625rem .9375rem;
+  cursor: pointer;
 }
 
 .btn-one{
+  color: white;
+  background-color: var(--second-color);
   margin-right: .625rem;
+}
+
+.btn-two{
+  background-color: var(--first-color);
+  color: gray;
 }
 
 .btn-three{
   position: absolute;
-  bottom: -10%;
-  left: 47.5%;
+  bottom: -15%;
+  left: 45.8%;
+  color: white;
+  background-color: var(--second-color);
+  border: 1px solid white;
 }
 
 </style>
