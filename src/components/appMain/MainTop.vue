@@ -26,8 +26,8 @@ export default {
             <div class="column">
                 <i class="fa-regular fa-building card-icon"></i>
                 <h3 class="card-title">Buildings</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident?
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id.
                 </p>
             </div>
             <!-- /Company benefit One -->
@@ -35,8 +35,8 @@ export default {
             <div class="column">
                 <i class="fa-solid fa-arrows-rotate card-icon"></i>
                 <h3 class="card-title">Renovate</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident?
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id.     
                 </p>
             </div>
             <!-- /Company benefit two -->
@@ -44,8 +44,8 @@ export default {
             <div class="column">
                 <i class="fa-sharp fa-solid fa-house card-icon"></i>
                 <h3 class="card-title">Construct</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident?
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id.   
                 </p>
             </div>
             <!-- /Company benefit three -->
@@ -53,8 +53,8 @@ export default {
             <div class="column">
                 <i class="fa-solid fa-truck card-icon"></i>
                 <h3 class="card-title">Exclusive</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident?
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id.
                 </p>
             </div>
             <!-- /Company benefit four -->
@@ -143,7 +143,7 @@ hr{
     width: calc(100% / 4 - 1.25rem);
     margin: 0 .625rem;
     padding: 1.25rem .625rem;
-    background-color: lightgray;
+    background-color: #f5f5f5;
     border-radius: .625rem;
 }
 
@@ -163,6 +163,10 @@ hr{
 .card-title{
     color: var(--titles-color);
     font-size: 1.75rem;
+}
+
+.card-text{
+    margin-top: .625rem;
 }
 
 .card-icon,.card-title{
