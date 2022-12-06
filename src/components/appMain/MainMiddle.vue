@@ -15,7 +15,7 @@ export default {
   
   <div class="container">
     <!-- Main Middle One Header -->
-    <h2 class="main-title">Titolo main works</h2>
+    <h2 class="main-title">Explore Recent Work</h2>
     <hr>
     <p class="desc-text">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum saepe ab quis accusantium repellendus aspernatur repudiandae, <br> maxime perspiciatis deserunt impedit ipsam magni quae placeat dolor.
@@ -26,13 +26,13 @@ export default {
     <div class="container-sm">
       <div class="row">
         <div class="column">
-          <img src="https://via.placeholder.com/200x200" alt="">
+          <img class="project-img" src="../../assets/img/project1-featured-294276386-400x400.jpg" alt="Project One Image">
         </div>
         <div class="column">
-          <img src="https://via.placeholder.com/200x200" alt="">
+          <img class="project-img" src="../../assets/img/project2-featured-15013609-400x400.jpg" alt="Project One Image">
         </div>
         <div class="column">
-          <img src="https://via.placeholder.com/200x200" alt="">
+          <img class="project-img" src="../../assets/img/project3-featured-189023420-400x400.jpg" alt="Project One Image">
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@ export default {
         <hr class="all-projects-line">
       </div>
       <div class="column">
-        <h5 class="all-projects-text">Prova testo</h5>
+        <h5 class="all-projects-text">VIEW ALL PROJECTS</h5>
       </div>
       <div class="column">
         <hr class="all-projects-line"> 
@@ -53,7 +53,7 @@ export default {
     <div class="container bg-variant">
       <!-- Main Middle Two Header -->
       <div class="container-sm sm-three">
-        <h2 class="main-title">Titolo main middle two</h2>
+        <h2 class="main-title">Our Core Values</h2>
         <hr>
         <p class="desc-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum saepe ab quis accusantium repellendus aspernatur repudiandae, <br> maxime perspiciatis deserunt impedit ipsam magni quae placeat dolor.
@@ -64,57 +64,57 @@ export default {
         <div class="row">
           <!-- High One -->
           <div class="column-sm">
-              <div class="highligts">
-                Icon
+              <div class="highligts high-one">
+                <i class="fa-sharp fa-solid fa-house high-icon"></i>
               </div>
               <strong class="high-title">
-                High title
+                Great Services
               </strong>
               <hr class="high-line">
               <p class="high-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
               </p>
           </div>
           <!-- /High One -->
           <!-- High Two -->
           <div class="column-sm">
-              <div class="highligts">
-                Icon
+              <div class="highligts high-two">
+                <i class="fa-solid fa-gear  high-icon"></i>
               </div>
               <strong class="high-title">
-                High title
+                Highest Standards
               </strong>
               <hr class="high-line">
               <p class="high-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
               </p>
           </div>
           <!-- /High Two -->
           <!-- High Three -->
           <div class="column-sm">
-              <div class="highligts">
-                Icon
+              <div class="highligts high-three">
+                <i class="fa-solid fa-users high-icon"></i>
               </div>
               <strong class="high-title">
-                High title
+                Professional Team
               </strong>
               <hr class="high-line">
               <p class="high-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
               </p>
           </div>
           <!-- /High Three -->
           <!-- High Four -->
           <div class="column-sm">
-              <div class="highligts">
-                Icon
+              <div class="highligts high-four">
+                <i class="fa-solid fa-lightbulb high-icon"></i>
               </div>
               <strong class="high-title">
-                High title
+                Creative Solutions
               </strong>
               <hr class="high-line">
               <p class="high-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
               </p>
           </div>
           <!-- /High Four -->
@@ -138,11 +138,12 @@ export default {
 }
 
 .main-title{
+  color: var(--titles-color);
   padding-bottom: .625rem;
 }
 
 hr{
-  width: 5%;
+  width: 6.25rem;
   height: .125rem;
   background-color: #fed03d;
   border: none;
@@ -154,6 +155,10 @@ hr{
   margin-bottom: 2.5rem;
 }
 
+.project-img{
+  max-width: 18.75rem;
+}
+
 .row{
   display: flex;
   justify-content: space-between;
@@ -161,7 +166,7 @@ hr{
 }
 
 .column{
-  width: calc(96% / 3);
+  width: calc(100% / 3);
   text-align: center;
 }
 
@@ -174,6 +179,7 @@ hr{
 }
 
 .all-projects-text{
+  color: var(--titles-color);
   padding: .9375rem 0;
 }
 
@@ -199,7 +205,7 @@ hr{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(98% / 4);
+  width: calc(96% / 4);
   text-align: center;
   margin-top: 1.25rem;
 }
@@ -208,13 +214,35 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5625rem 1.5625rem;
-  border: .0625rem solid black;
+  border: none;
   border-radius: 50%;
   aspect-ratio: 1;
 }
 
+.high-one{
+  background-color: #4ea4a5;
+}
+
+.high-two{
+  background-color: #4ea4a5;
+}
+
+.high-three{
+  background-color: #f6722a;
+}
+
+.high-four{
+  background-color: #a7cf47;
+}
+
+.high-icon{
+  color: white;
+  font-size: 2.1875rem;
+  padding: 2.1875rem 2.1875rem;
+}
+
 .high-title{
+  color: var(--titles-color);
   margin-top: .625rem;
   margin-bottom: .625rem;
 }
@@ -224,7 +252,9 @@ hr{
 }
 
 .high-text{
-  margin-top: .625rem;
+  color: var(--titles-color);
+  font-size: .875rem;
+  margin-top: 1.25rem;
 }
 
 /* /Company Highligts */

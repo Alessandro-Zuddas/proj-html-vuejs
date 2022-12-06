@@ -111,7 +111,7 @@ export default {
 }
 
 .main-title{
-    color: var(--fourth-color);
+    color: var(--titles-color);
     padding-bottom: .625rem;
 }
 
@@ -155,13 +155,13 @@ hr{
     width: 3.75rem;
     border-radius: 50%;
     aspect-ratio: 1;
-    border: .0313rem solid #747474;
-    color: #747474;
+    border: .0313rem solid var(--titles-color);
+    color: var(--titles-color);
     font-size: 1.5625rem;
 }
 
 .card-title{
-    color: #747474;
+    color: var(--titles-color);
     font-size: 1.75rem;
 }
 
