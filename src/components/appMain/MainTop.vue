@@ -14,7 +14,7 @@ export default {
 <template>
   
     <div class="container">
-        <h2 class="main-title">Titolo main top</h2>
+        <h2 class="main-title">Specialists in Modern Construction</h2>
         <hr>
         <p class="desc-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum saepe ab quis accusantium repellendus aspernatur repudiandae, <br> maxime perspiciatis deserunt impedit ipsam magni quae placeat dolor.
@@ -24,8 +24,8 @@ export default {
         <div class="row row-bt-circle">
             <!-- Company benefit One -->
             <div class="column">
-                <p class="card-icon">Icon</p>
-                <h3 class="card-title">Titolo</h3>
+                <i class="fa-regular fa-building card-icon"></i>
+                <h3 class="card-title">Buildings</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident?
                 </p>
@@ -33,8 +33,8 @@ export default {
             <!-- /Company benefit One -->
             <!-- Company benefit two -->
             <div class="column">
-                <p class="card-icon">Icon</p>
-                <h3 class="card-title">Titolo</h3>
+                <i class="fa-solid fa-arrows-rotate card-icon"></i>
+                <h3 class="card-title">Renovate</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident?
                 </p>
@@ -42,8 +42,8 @@ export default {
             <!-- /Company benefit two -->
             <!-- Company benefit three -->
             <div class="column">
-                <p class="card-icon">Icon</p>
-                <h3 class="card-title">Titolo</h3>
+                <i class="fa-sharp fa-solid fa-house card-icon"></i>
+                <h3 class="card-title">Construct</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident?
                 </p>
@@ -51,8 +51,8 @@ export default {
             <!-- /Company benefit three -->
             <!-- Company benefit four -->
             <div class="column">
-                <p class="card-icon">Icon</p>
-                <h3 class="card-title">Titolo</h3>
+                <i class="fa-solid fa-truck card-icon"></i>
+                <h3 class="card-title">Exclusive</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident?
                 </p>
@@ -67,30 +67,30 @@ export default {
         <div class="container-sm">
             <!-- Company Info One -->
             <div class="company-infos">
-                <div>Icon</div>
-                <h2>0000</h2>
-                <p>Info Text</p>
+                <i class="fa-solid fa-suitcase info-icon"></i>
+                <h2 class="info-number">3534</h2>
+                <p class="info-text">PLANNING APPLICATIONS</p>
             </div>
             <!-- /Company Info One -->
             <!-- Company Info Two -->
             <div class="company-infos">
-                <div>Icon</div>
-                <h2>0000</h2>
-                <p>Info Text</p>
+                <i class="fa-solid fa-building info-icon"></i>
+                <h2 class="info-number">896</h2>
+                <p class="info-text">COMPLETED PROJECTS</p>
             </div>
             <!-- /Company Info Two -->
             <!-- Company Info Three -->
             <div class="company-infos">
-                <div>Icon</div>
-                <h2>0000</h2>
-                <p>Info Text</p>
+                <i class="fa-solid fa-users info-icon"></i>
+                <h2 class="info-number">176</h2>
+                <p class="info-text">TRAINED PROFESSIONALS</p>
             </div>
             <!-- /Company Info Three -->
             <!-- Company Info Four -->
             <div class="company-infos">
-                <div>Icon</div>
-                <h2>0000</h2>
-                <p>Info Text</p>
+                <i class="fa-sharp fa-solid fa-globe info-icon"></i>
+                <h2 class="info-number">19</h2>
+                <p class="info-text">INTERNATIONAL OFFICES</p>
             </div>
             <!-- /Company Info Four -->
         </div>
@@ -111,11 +111,12 @@ export default {
 }
 
 .main-title{
+    color: var(--fourth-color);
     padding-bottom: .625rem;
 }
 
 hr{
-    width: 5%;
+    width: 8%;
     height: .125rem;
     background-color: #fed03d;
     border: none;
@@ -136,11 +137,32 @@ hr{
 }
 
 .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: calc(100% / 4 - 1.25rem);
     margin: 0 .625rem;
     padding: 1.25rem .625rem;
     background-color: lightgray;
     border-radius: .625rem;
+}
+
+.card-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 3.75rem;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    border: .0313rem solid #747474;
+    color: #747474;
+    font-size: 1.5625rem;
+}
+
+.card-title{
+    color: #747474;
+    font-size: 1.75rem;
 }
 
 .card-icon,.card-title{
@@ -155,8 +177,9 @@ hr{
     padding: 1.5625rem 0;
     position: relative;
     overflow: hidden;
-    /* DEBUG */
-    background-color: aqua;
+    background-image: url("../../assets/img/home-244125289.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-variant:before{
@@ -192,6 +215,21 @@ hr{
     flex-direction: column;
     align-items: center;
     padding: 3.125rem 0;
+    color: var(--first-color);
+}
+
+.info-text{
+    color: white;
+    font-size: .875rem;
+}
+
+.info-icon{
+    font-size: 3.125rem;
+    margin-bottom: .3125rem;
+}
+
+.info-number{
+    font-size: 2.5rem;
 }
 
 /* /Company infos */
