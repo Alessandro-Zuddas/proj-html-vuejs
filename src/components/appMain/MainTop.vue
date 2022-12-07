@@ -187,6 +187,7 @@ hr{
 .hover-panel{
     position: absolute; 
     top: 0;
+    left: 0;
     display: none;
     flex-direction: column;
     align-items: center;
