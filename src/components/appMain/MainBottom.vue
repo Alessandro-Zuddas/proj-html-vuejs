@@ -21,6 +21,7 @@ export default {
 </script>
 
 <template>
+
   <div class="container">
     <!-- Reviews -->
     <div class="row bg-variant" @click="onCarouselClick">   
@@ -60,6 +61,16 @@ export default {
         <!-- Latest news One -->
         <div class="column img-col">
           <img class="latest-news-img" src="../../assets/img/blog-post-134132600-1200x723.jpg" alt="Blog Post One">
+          <!-- On Hover Panel -->
+          <div class="hover-panel">
+            <div>
+              <i class="fa-solid fa-link hover-panel-icons"></i>
+              <i class="fa-solid fa-magnifying-glass hover-panel-icons"></i>
+            </div>
+            <h4 class="hover-panel-title">Redeveloping Florida's Remote Southern Coast</h4>
+            <small class="hover-panel-tag">Architecture, Buildings, Construction, News</small>
+          </div>
+          <!-- /On Hover Panel -->
           <div class="news-col">
             <h3 class="latest-news-title">Redeveloping Florida's Remote Southern Coast</h3>
             <small class="news-date">December 15 2021</small>
@@ -73,6 +84,16 @@ export default {
         <!-- Latest news two -->
         <div class="column img-col">
           <img class="latest-news-img" src="../../assets/img/blog-post-332773904-1200x723.jpg" alt="Blog Post Two">
+          <!-- On Hover Panel -->
+          <div class="hover-panel">
+            <div>
+              <i class="fa-solid fa-link hover-panel-icons"></i>
+              <i class="fa-solid fa-magnifying-glass hover-panel-icons"></i>
+            </div>
+            <h4 class="hover-panel-title">Redeveloping Florida's Remote Southern Coast</h4>
+            <small class="hover-panel-tag">Architecture, Buildings, Construction, News</small>
+          </div>
+          <!-- /On Hover Panel -->
           <div class="news-col">
             <h3 class="latest-news-title">How We Manage Large Construction Projects</h3>
             <small class="news-date">December 15 2021</small>
@@ -86,6 +107,16 @@ export default {
         <!-- Latest news three -->
         <div class="column img-col">
           <img class="latest-news-img" src="../../assets/img/blog-post-92486644-1200x723.jpg" alt="Blog Post Three">
+          <!-- On Hover Panel -->
+          <div class="hover-panel">
+            <div>
+              <i class="fa-solid fa-link hover-panel-icons"></i>
+              <i class="fa-solid fa-magnifying-glass hover-panel-icons"></i>
+            </div>
+            <h4 class="hover-panel-title">Redeveloping Florida's Remote Southern Coast</h4>
+            <small class="hover-panel-tag">Architecture, Buildings, Construction, News</small>
+          </div>
+          <!-- /On Hover Panel -->
           <div class="news-col">
             <h3 class="latest-news-title">Future Proofing A Modern Home</h3>
             <small class="news-date">December 15 2021</small>
@@ -116,7 +147,7 @@ export default {
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
 /* Reviews */
 
@@ -251,6 +282,31 @@ hr{
   border: .0625rem solid lightgray;
 }
 
+.hover-panel{
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 15.625rem;
+  height: 9.375rem;
+  background-color: var(--first-color);
+  color: white;
+}
+
+.hover-panel-icons{
+  color: var(--first-color);
+  background-color: white;
+  padding: .75rem .75rem;
+  margin: 0 .3125rem;
+  border-radius: 50%;
+}
+
+.hover-panel-title{
+  margin: .625rem 0;
+}
+
 .news-col{
   display: flex;
   flex-direction: column;
@@ -298,9 +354,18 @@ hr{
 }
 
 .column{
+  position: relative;
   width: calc(96% / 3);
   margin: 0 .625rem;
   text-align: center;
+}
+
+.column:hover{
+  
+  .hover-panel{
+    display: flex;
+  }
+
 }
 
 .latest-news-text{
