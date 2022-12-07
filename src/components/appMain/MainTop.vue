@@ -29,6 +29,15 @@ export default {
                 <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id.
                 </p>
+                <!-- On Hover Panel -->
+                <div class="hover-panel">
+                    <h4 class="hover-panel-title">ARTFULLY CRAFTED</h4>
+                    <p class="hover-panel-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, perspiciatis itaque voluptatum eius eum ex vero nulla optio ratione debitis pariatur repellendus.
+                    </p>
+                    <button class="hover-panel-btn">GET A QUOTE</button>
+                </div>
+                <!-- /On Hover Panel -->
             </div>
             <!-- /Company benefit One -->
             <!-- Company benefit two -->
@@ -38,6 +47,15 @@ export default {
                 <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id.     
                 </p>
+                <!-- On Hover Panel -->
+                <div class="hover-panel">
+                    <h4 class="hover-panel-title">ARTFULLY CRAFTED</h4>
+                    <p class="hover-panel-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, perspiciatis itaque voluptatum eius eum ex vero nulla optio ratione debitis pariatur repellendus.
+                    </p>
+                    <button class="hover-panel-btn">GET A QUOTE</button>
+                </div>
+                <!-- /On Hover Panel -->
             </div>
             <!-- /Company benefit two -->
             <!-- Company benefit three -->
@@ -47,6 +65,15 @@ export default {
                 <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id.   
                 </p>
+                <!-- On Hover Panel -->
+                <div class="hover-panel">
+                    <h4 class="hover-panel-title">ARTFULLY CRAFTED</h4>
+                    <p class="hover-panel-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, perspiciatis itaque voluptatum eius eum ex vero nulla optio ratione debitis pariatur repellendus.
+                    </p>
+                    <button class="hover-panel-btn">GET A QUOTE</button>
+                </div>
+                <!-- /On Hover Panel -->
             </div>
             <!-- /Company benefit three -->
             <!-- Company benefit four -->
@@ -56,6 +83,15 @@ export default {
                 <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id, expedita quibusdam ipsum provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio quos tenetur labore id.
                 </p>
+                <!-- On Hover Panel -->
+                <div class="hover-panel">
+                    <h4 class="hover-panel-title">ARTFULLY CRAFTED</h4>
+                    <p class="hover-panel-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, perspiciatis itaque voluptatum eius eum ex vero nulla optio ratione debitis pariatur repellendus.
+                    </p>
+                    <button class="hover-panel-btn">GET A QUOTE</button>
+                </div>
+                <!-- /On Hover Panel -->
             </div>
             <!-- /Company benefit four -->
         </div>
@@ -99,7 +135,7 @@ export default {
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
 /* Company benefits */
 
@@ -137,6 +173,7 @@ hr{
 }
 
 .column{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,6 +182,46 @@ hr{
     padding: 1.25rem .625rem;
     background-color: #f5f5f5;
     border-radius: .625rem;
+}
+
+.hover-panel{
+    position: absolute; 
+    top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: .9375rem .9375rem;
+    color: var(--titles-color);
+    background-color: var(--first-color);
+    border-radius: .625rem;
+}
+
+.hover-panel-title{
+    margin: 1.5625rem 0;
+}
+
+.hover-panel-btn{
+    margin-top: 2.1875rem;
+    padding: .625rem 1.25rem;
+    color: var(--titles-color);
+    background-color: #ffe07b;
+    border: none;
+    cursor: pointer;
+}
+
+.hover-panel-btn:hover{
+    background-color: var(--second-color);
+    color: white;
+}
+
+.column:hover{
+
+    .hover-panel{
+        display: flex;
+    }
+
 }
 
 .card-icon{
