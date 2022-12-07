@@ -9,12 +9,27 @@ export default {
       }
     },
     methods:{
-      onCarouselClick(){
+      onPrevClick(){
+
         if(this.carouselIndex === 0){
-          this.carouselIndex = 1;
+          
+          this.carouselIndex++;
+
         }else{
           this.carouselIndex = 0;
         }
+
+      },
+      onNextClick(){
+
+        if(this.carouselIndex === 1){
+          
+          this.carouselIndex--;
+
+        }else{
+          this.carouselIndex = 1;
+        }
+
       }
     }
 }
@@ -24,28 +39,36 @@ export default {
 
   <!-- Reviews -->
   <div class="container">
-    <div class="row bg-variant" @click="onCarouselClick">   
+    <div class="row bg-variant">   
       <div class="container-xs">
         <h2 class="main-bt-title">Our Home Owners Say</h2>
         <hr>
-        <img v-if="(this.carouselIndex === 0)" class="review-img" src="../../assets/img/home-testimonial-113165296.jpg" alt="Testimonial 1">
-        <img v-else class="review-img" src="../../assets/img/home-testimonial-84268399.jpg" alt="Testimonial 2">
-        <p v-if="(this.carouselIndex === 0)" class="review-text">
+        <img v-show="(this.carouselIndex === 0)" class="review-img" src="../../assets/img/home-testimonial-113165296.jpg" alt="Testimonial 1">
+        <img v-show="(this.carouselIndex === 1)" class="review-img" src="../../assets/img/home-testimonial-84268399.jpg" alt="Testimonial 2">
+        <p v-show="(this.carouselIndex === 0)" class="review-text">
           "No man but feels more of a man in the world if he have but a bit of ground that he can call his own. However small it is on the surface, it is four thousand miles deep: and that is a very handsome property"
         </p>
-        <p v-else class="review-text">
+        <p v-show="(this.carouselIndex === 1)" class="review-text">
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem distinctio quod culpa perferendis quo quae ipsum id quas similique, numquam accusantium ipsa aliquid deserunt ad in pariatur laboriosam quia totam?"
         </p>
-        <strong v-if="(this.carouselIndex === 0)" class="review-user">
+        <strong v-show="(this.carouselIndex === 0)" class="review-user">
           KATE HARRIS - NEW HOME OWNER
         </strong>
-        <strong v-else class="review-user">
+        <strong v-show="(this.carouselIndex === 1)" class="review-user">
           HARRY SMITH - NEW HOME OWNER
         </strong>
         <div class="carousel-index">
           <div class="car-dot" :class="{ active: carouselIndex === 0 }"></div>
           <div class="car-dot" :class="{ active: carouselIndex === 1 }"></div>
         </div>
+        <!-- Carousel Buttons -->
+        <button class="prev-btn" @click="onPrevClick">
+          <i class="fa-solid fa-chevron-left prev-icon"></i>
+        </button>
+        <button class="next-btn" @click="onNextClick">
+          <i class="fa-solid fa-chevron-right next-icon"></i>
+        </button>
+        <!-- /Carousel Buttons -->
       </div>
     </div>
   </div>
@@ -158,11 +181,14 @@ export default {
 /* Reviews */
 
 .container-xs{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1.25rem 0;
+  // animation-name: sliderEffect;
+  // animation-duration: 1s;
 }
 
 .main-bt-title{
@@ -211,6 +237,29 @@ hr{
 
 .active{
   background-color: white;
+}
+
+.prev-btn, .next-btn{
+  background: none;
+  border: none;
+}
+.prev-btn{
+  position: absolute;
+  left: -20%;
+}
+
+.next-btn{
+  position: absolute;
+  right: -20%;
+}
+
+.prev-btn:hover,.next-btn:hover{
+  transform: scale(1.2);
+}
+
+.prev-icon, .next-icon{
+  font-size: 1.875rem;
+  color: white;
 }
 
 .bg-variant{
@@ -393,6 +442,18 @@ hr{
 
 // Carousel slider animation
 
+@keyframes sliderEffect{
 
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
 
 </style>
