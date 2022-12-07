@@ -119,6 +119,10 @@ hr{
   max-width: 13.75rem;
 }
 
+.partner-img:hover{
+  transform: scale(1.1);
+}
+
 /* /Hero Bottom Top */
 
 /* Hero Bottom Down */
@@ -174,6 +178,12 @@ hr{
   border: none;
   padding: .625rem 1.5625rem;
   margin-bottom: .3125rem;
+  cursor: pointer;
+}
+
+.hero-btn:hover{
+  color: white;
+  background-color: var(--second-color);
 }
 
 .free-trial-text{

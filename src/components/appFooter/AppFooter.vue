@@ -139,11 +139,16 @@ export default {
 }
 
 .learn-more-btn{
-  color: var(--titles-color);
+  color: var(--second-color);
   background-color: var(--first-color);
   border: none;
   padding: .5rem 1.25rem;
   cursor: pointer;
+}
+
+.learn-more-btn:hover{
+  background-color: var(--second-color);
+  color: white;
 }
 
 .col-title{

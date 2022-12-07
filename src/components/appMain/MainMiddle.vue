@@ -186,7 +186,7 @@ hr{
 }
 
 .project-img{
-  max-width: 18.75rem;
+  max-width: 15.625rem;
 }
 
 .hover-panel{
@@ -196,7 +196,7 @@ hr{
   justify-content: center;
   position: absolute;
   top: 0;
-  width: 19.3125rem;
+  width: 16.625rem;
   height: 100%;
   background-color: var(--first-color);
 }
