@@ -22,18 +22,24 @@ export default {
 
 <template>
 
+  <!-- Reviews -->
   <div class="container">
-    <!-- Reviews -->
     <div class="row bg-variant" @click="onCarouselClick">   
       <div class="container-xs">
         <h2 class="main-bt-title">Our Home Owners Say</h2>
         <hr>
         <img v-if="(this.carouselIndex === 0)" class="review-img" src="../../assets/img/home-testimonial-113165296.jpg" alt="Testimonial 1">
         <img v-else class="review-img" src="../../assets/img/home-testimonial-84268399.jpg" alt="Testimonial 2">
-        <p class="review-text">
+        <p v-if="(this.carouselIndex === 0)" class="review-text">
           "No man but feels more of a man in the world if he have but a bit of ground that he can call his own. However small it is on the surface, it is four thousand miles deep: and that is a very handsome property"
         </p>
-        <strong class="review-user">
+        <p v-else class="review-text">
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem distinctio quod culpa perferendis quo quae ipsum id quas similique, numquam accusantium ipsa aliquid deserunt ad in pariatur laboriosam quia totam?"
+        </p>
+        <strong v-if="(this.carouselIndex === 0)" class="review-user">
+          KATE HARRIS - NEW HOME OWNER
+        </strong>
+        <strong v-else class="review-user">
           HARRY SMITH - NEW HOME OWNER
         </strong>
         <div class="carousel-index">
@@ -42,8 +48,8 @@ export default {
         </div>
       </div>
     </div>
-    <!-- /Reviews -->
   </div>
+  <!-- /Reviews -->
 
   <!-- Latest news  -->
   <div class="container cont-two">
@@ -384,5 +390,9 @@ hr{
 }
 
 /* /Latest news */
+
+// Carousel slider animation
+
+
 
 </style>

@@ -300,6 +300,10 @@ hr{
     color: var(--first-color);
 }
 
+.company-infos:hover{
+    transform: scale(1.1);
+}
+
 .info-text{
     color: white;
     font-size: .875rem;
