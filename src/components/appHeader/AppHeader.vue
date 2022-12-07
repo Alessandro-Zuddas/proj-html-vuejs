@@ -1,15 +1,53 @@
 <script>
+
+import NavContent from './NavContent.vue';
+
 export default {
 
     name: "AppHeader",
 
     data() {
         return {
-            
+
+            currentLink: 0,
+
+            linksInfo: [
+                {
+                    linkName: "HOME",
+                    linkRef: "#",
+                    id: 0
+                },
+                {
+                    linkName: "ABOUT",
+                    linkRef: "#",
+                    id: 1
+                },
+                {
+                    linkName: "SERVICES",
+                    linkRef: "#",
+                    id: 2
+                },
+                {
+                    linkName: "WORK",
+                    linkRef: "#",
+                    id: 3
+                },
+                {
+                    linkName: "ARTICLES",
+                    linkRef: "#",
+                    id: 4
+                },
+
+            ]
         }
+    },
+    components: {
+        NavContent,
     }, 
     methods:{
-
+        onLinkClick(i){
+            this.currentLink = i;
+        }
     }
 }
 </script>
@@ -21,11 +59,12 @@ export default {
             <img class="logo" src="../../assets/img/construction_logo.png" alt="Header Logo">
         </a>
         <nav>
-            <a class="nav-link active" href="#">HOME</a>
-            <a class="nav-link" href="#">ABOUT</a>
-            <a class="nav-link" href="#">SERVICES</a>
-            <a class="nav-link" href="#">WORK</a>
-            <a class="nav-link" href="#">ARTICLES</a>
+            <NavContent
+            v-for="(linkInfo, index) in this.linksInfo" 
+            :info="linkInfo" 
+            :currentLink="this.currentLink"
+            @onLinkClick="onLinkClick(index)" />
+
             <button class="nav-btn">GET QUOTE</button>
         </nav>
     </div>
@@ -46,36 +85,6 @@ export default {
     max-height: 9.375rem;
 }
 
-.nav-link{
-    color: grey;
-    text-decoration: none;
-    padding-right: .9375rem;
-}
-
-.active{
-    position: relative;
-    color: var(--first-color);
-    border-bottom: 5px solid white;
-}
-
-.active:before{
-    content:'';
-    position: absolute;
-    left: 0;
-    right: 18px;
-    bottom: -44px;
-    margin: 0 auto;
-    width: 0;
-    height: 0;
-    border-top: 10px solid white;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-}
-
-.nav-link:hover{
-    color: var(--first-color);
-}
-
 .nav-btn{
     color: gray;
     background-color: var(--first-color);
@@ -87,10 +96,6 @@ export default {
 .nav-btn:hover{
     color: white;
     background-color: var(--second-color);
-}
-
-a{
-    font-size: .8125rem;
 }
 
 </style>
