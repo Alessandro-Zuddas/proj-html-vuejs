@@ -196,7 +196,8 @@ hr{
   justify-content: center;
   position: absolute;
   top: 0;
-  width: 16.625rem;
+  left: .3125rem;
+  min-width: 17.5rem;
   height: 100%;
   background-color: var(--first-color);
 }

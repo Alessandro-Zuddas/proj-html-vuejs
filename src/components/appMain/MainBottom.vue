@@ -49,7 +49,7 @@ export default {
           "No man but feels more of a man in the world if he have but a bit of ground that he can call his own. However small it is on the surface, it is four thousand miles deep: and that is a very handsome property"
         </p>
         <p v-show="(this.carouselIndex === 1)" class="review-text">
-          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem distinctio quod culpa perferendis quo quae ipsum id quas similique, numquam accusantium ipsa aliquid deserunt ad in pariatur laboriosam quia totam?"
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem distinctio quod culpa perferendis quo quae ipsum id quas similique, numquam accusantium ipsa aliquid deserunt ad in pariatur."
         </p>
         <strong v-show="(this.carouselIndex === 0)" class="review-user">
           KATE HARRIS - NEW HOME OWNER
