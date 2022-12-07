@@ -74,9 +74,19 @@ export default {
   margin-right: .625rem;
 }
 
+.btn-one:hover{
+  color: var(--titles-color);
+  background-color: var(--first-color);
+}
+
 .btn-two{
   background-color: var(--first-color);
   color: gray;
+}
+
+.btn-two:hover{
+  background-color: var(--second-color);
+  color: white;
 }
 
 .btn-three{
@@ -86,6 +96,12 @@ export default {
   color: white;
   background-color: var(--second-color);
   border: 1px solid white;
+}
+
+.btn-three:hover{
+  background-color: white;
+  color: black;
+  border: .0625rem solid black;
 }
 
 </style>

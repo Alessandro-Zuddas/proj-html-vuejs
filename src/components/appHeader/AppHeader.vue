@@ -5,7 +5,7 @@ export default {
 
     data() {
         return {
-            currentIndex: 0,
+            
         }
     }, 
     methods:{
@@ -17,7 +17,9 @@ export default {
 <template>
   
     <div class="container">
-        <img class="logo" src="../../assets/img/construction_logo.png" alt="Header Logo">
+        <a href="#">
+            <img class="logo" src="../../assets/img/construction_logo.png" alt="Header Logo">
+        </a>
         <nav>
             <a class="nav-link active" href="#">HOME</a>
             <a class="nav-link" href="#">ABOUT</a>
@@ -80,6 +82,11 @@ export default {
     border: none;
     padding: .4375rem .9375rem;
     cursor: pointer;
+}
+
+.nav-btn:hover{
+    color: white;
+    background-color: var(--second-color);
 }
 
 a{

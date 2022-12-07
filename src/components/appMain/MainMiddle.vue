@@ -27,12 +27,42 @@ export default {
       <div class="row">
         <div class="column">
           <img class="project-img" src="../../assets/img/project1-featured-294276386-400x400.jpg" alt="Project One Image">
+          <!-- On Hover Panel -->
+          <div class="hover-panel">
+            <div>
+              <i class="fa-solid fa-link hover-panel-icons"></i>
+              <i class="fa-solid fa-magnifying-glass hover-panel-icons"></i>
+            </div>
+            <h4 class="hover-panel-title">Florida Health Facility</h4>
+            <small class="hover-panel-tag">Commercial</small>
+          </div>
+          <!-- /On Hover Panel -->
         </div>
         <div class="column">
           <img class="project-img" src="../../assets/img/project2-featured-15013609-400x400.jpg" alt="Project One Image">
+          <!-- On Hover Panel -->
+          <div class="hover-panel">
+            <div>
+              <i class="fa-solid fa-link hover-panel-icons"></i>
+              <i class="fa-solid fa-magnifying-glass hover-panel-icons"></i>
+            </div>
+            <h4 class="hover-panel-title">Florida Health Facility</h4>
+            <small class="hover-panel-tag">Commercial</small>
+          </div>
+          <!-- /On Hover Panel -->
         </div>
         <div class="column">
-          <img class="project-img" src="../../assets/img/project3-featured-189023420-400x400.jpg" alt="Project One Image">
+          <img class="project-img" src="../../assets/img/project3-featured-189023420-400x400.jpg" alt="Project One Image">  
+          <!-- On Hover Panel -->
+          <div class="hover-panel">
+            <div>
+              <i class="fa-solid fa-link hover-panel-icons"></i>
+              <i class="fa-solid fa-magnifying-glass hover-panel-icons"></i>
+            </div>
+            <h4 class="hover-panel-title">Florida Health Facility</h4>
+            <small class="hover-panel-tag">Commercial</small>
+          </div>
+          <!-- /On Hover Panel -->
         </div>
       </div>
     </div>
@@ -126,7 +156,7 @@ export default {
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
 /* Projects Images */
 
@@ -159,6 +189,42 @@ hr{
   max-width: 18.75rem;
 }
 
+.hover-panel{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 19.3125rem;
+  height: 100%;
+  background-color: var(--first-color);
+}
+
+.hover-panel-icons{
+  color: var(--first-color);
+  background-color: white;
+  padding: .75rem .75rem;
+  margin: 0 .3125rem;
+  border-radius: 50%;
+}
+
+.hover-panel-title{
+  font-size: 1.375rem;
+  color: white;
+  margin: .9375rem 0;
+}
+
+.hover-panel-tag{
+  color: white;
+}
+
+.column:hover{
+  .hover-panel{
+    display: flex;
+  }
+}
+
 .row{
   display: flex;
   justify-content: space-between;
@@ -166,6 +232,7 @@ hr{
 }
 
 .column{
+  position: relative;
   width: calc(100% / 3);
   text-align: center;
 }
@@ -217,6 +284,10 @@ hr{
   border: none;
   border-radius: 50%;
   aspect-ratio: 1;
+}
+
+.highligts:hover{
+  background-color: var(--first-color);
 }
 
 .high-one{
